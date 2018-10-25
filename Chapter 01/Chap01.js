@@ -25,7 +25,6 @@
     Backtick-quoted strings, usually called template literals*/
 
 console.log(`half of 100 is ${100 / 2}`);
-
 //output -> half of 100 is 50
 //REMEMBER its back quoted strings - wont work for single or double quotes
 
