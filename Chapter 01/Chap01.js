@@ -27,8 +27,35 @@ console.log(`half of 100 is ${100 / 2}`);
 
 /*  There is only one value in JavaScript that is not equal to itself, and that is NaN (“not a number”)
 */
-
 console.log(NaN == NaN)
 //output -> false
 
+//AUTOMATIC TYPE CONVERSIONS
 
+/*JavaScript will quietly convert that value to the type it needs, using a set of rules that often aren’t what you want or expect. This is called type coercion.
+
+The null in the first expression becomes 0, and the "5" in the second expression becomes 5 (from string to number). Yet in the third expression, + tries string concatenation before numeric addition, so the 1 is converted to "1" (from number to string).
+
+When something that doesn’t map to a number in an obvious way (such as "five" or undefined) is converted to a number, you get the value NaN. Further arithmetic operations on NaN keep producing NaN, so if you find yourself getting one of those in an unexpected place, look for accidental type conversions.*/
+
+console.log(8 * null)
+// → 0
+console.log("5" - 1)
+// → 4                      //This are interesting
+console.log("5" + 1)
+// → 51
+console.log("five" * 2)
+// → NaN
+console.log(false == 0)
+// → true
+
+
+/*However, when null or undefined occurs on either side of the operator, it produces true only if both sides are one of null or undefined.*/
+
+console.log(null == undefined);
+// → true
+console.log(null == 0);
+// → false
+
+//Expressions like 0 == false and "" == false are also true because of automatic type conversion.
+//0, NaN, and the empty string ("") count as false, while all the other values count as true. So 0 || -1 produces -1, and "" || "!?" yields "!?".
