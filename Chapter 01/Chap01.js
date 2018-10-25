@@ -30,3 +30,5 @@ console.log(`half of 100 is ${100 / 2}`);
 
 console.log(NaN == NaN)
 //output -> false
+
+
