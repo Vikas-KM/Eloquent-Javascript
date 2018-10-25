@@ -1,5 +1,5 @@
 /*
-        NOTES in comment part
+                            VALUES, TYPES and OPERATORS
 
     JavaScript uses a fixed number of bits, 64 of them, to store a single number value.
 
