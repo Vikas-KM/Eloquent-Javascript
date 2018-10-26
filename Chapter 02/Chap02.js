@@ -12,7 +12,7 @@
 
 */    
 
-if(!Number.isNaN(10)){              // argument 10 is NOT Nan -- (!false)
+if(!Number.isNaN(10)){              // argument 10 is NOT NaN -- (!false)
     console.log('If executed');
 }else{ 
     console.log('ELSE executed');
