@@ -119,7 +119,6 @@ outputting a grid of the given width and height.
 
 // Your code here.
 let x = '';
-let size = 8;
 for(let i=0;i<8;i++){
   for(let j=0;j<8;j++){
     if((i+j)%2 == 0){
