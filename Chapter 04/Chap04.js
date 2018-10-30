@@ -213,3 +213,52 @@ spread another array into the new array.
 let words = ["never", "fully"];
 console.log(["will", ...words, "understand"]);
 // → ["will", "never", "fully", "understand"]
+
+// Math.random. This is a function that returns a new pseudorandom number between 
+// zero (inclusive) and one (exclusive) every time you call it.
+
+console.log(Math.random());
+// → 0.36993729369714856
+console.log(Math.random());
+// → 0.727367032552138
+console.log(Math.random());
+// → 0.40180766698904335
+
+//use Math.round() Math.abs() Math.floor() Math.ceil() like method
+
+/*
+Exercises
+
+The sum of a range
+
+The introduction of this book alluded to the following as a nice way 
+to compute the sum of a range of numbers:
+
+console.log(sum(range(1, 10)));
+
+Write a range function that takes two arguments, start and end, and returns an array
+containing all the numbers from start up to (and including) end.
+
+Next, write a sum function that takes an array of numbers and 
+returns the sum of these numbers. 
+Run the example program and see whether it does indeed return 55.
+
+As a bonus assignment, modify your range function to take an optional third argument 
+that indicates the “step” value used when building the array. 
+If no step is given, the elements go up by increments of one, 
+corresponding to the old behavior. 
+The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]. 
+Make sure it also works with negative step values so that 
+range(5, 2, -1) produces [5, 4, 3, 2].
+*/
+
+// Your code here.
+let range = function (start, end) {
+  let j = 0, arr = [];
+  for (let i = start; i <= end; i++) {
+    arr[j] = i;
+    j++;
+  }
+  return arr;
+};
+
